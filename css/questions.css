@@ -1,0 +1,15 @@
+#questions .ui-content {
+  padding-top: 89px !important;
+}
+#questions .content {
+  padding-top: 30px;
+  font-size: 13px;
+  color: #59595a;
+}
+#questions .content p {
+  font-weight: bold;
+  text-align: left;
+}
+#questions .content button {
+  margin-top: 20px;
+}

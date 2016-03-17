@@ -1,0 +1,146 @@
+#buscar-oficina span.result,
+#oficina-cercana span.result {
+  display: block;
+  margin: 15px;
+  font-weight: bold;
+  color: #59595a;
+}
+
+ul.oficinas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.oficinas li {
+  padding: 10px 15px;
+  background-image: url(images/custom-arrow.png);
+  background-position: 96% center;
+  background-repeat: no-repeat;
+  background-size: 6%;
+}
+ul.oficinas li b {
+  font-size: 20px;
+}
+ul.oficinas li b,
+ul.oficinas li p {
+  color: #59595a;
+  display: block;
+  margin-top: 5px !important;
+  margin: 0;
+}
+ul.oficinas li p:last-child {
+  font-size: 14px;
+}
+ul.oficinas li:nth-child(2n+1) {
+  background-color: #f2f2f2;
+}
+
+#buscar-oficina .form {
+  padding: 15px;
+}
+#buscar-oficina .form .ui-input-text {
+  margin-bottom: 15px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+#buscar-oficina .form .ui-select .ui-btn,
+#buscar-oficina .form textarea,
+#buscar-oficina .form .ui-input-text input {
+  border: 1px solid #aaa !important;
+  line-height: 25px;
+  padding: .4em;
+  padding-left: 45px;
+  background-size: 22.5px !important;
+  border-radius: 0 !important;
+  background-color: #fff !important;
+}
+#buscar-oficina .form .ui-select .ui-btn span {
+  text-align: left;
+  color: #999;
+  font-weight: normal;
+}
+#buscar-oficina .form .ui-input-text input[name="name"] {
+  background: url(images/input-name.png) no-repeat 11.25px center; 
+}
+#buscar-oficina .form .ui-input-text input[name="email"] {
+  background: url(images/input-email.png) no-repeat 11.25px center; 
+}
+#buscar-oficina .form .ui-select .ui-btn {
+  background: url(images/input-subject.png) no-repeat 11.25px center; 
+}
+#buscar-oficina .form textarea[name="message"] {
+  background: url(images/input-message.png) no-repeat 11.25px 8.75px; 
+}
+
+.checkboxes {
+  overflow: auto;
+  padding: 10px 0;
+}
+.checkboxes > div {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.checkboxes > div .ui-checkbox,
+.checkboxes > div input {
+  float: left;
+  margin-right: 5px;
+}
+.checkboxes > div span {
+  float: left;
+  margin-left: 30px;
+}
+
+#detalle-oficina .logo-oficina {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+#detalle-oficina .logo-oficina img {
+  width: 90%;
+}
+#detalle-oficina .head {
+  padding: 20px 30px;
+  border-bottom: 2px solid #c6c6c6;
+  font-size: 20px;
+  font-weight: bold;
+  color: #59595a;
+}
+#detalle-oficina .head span {
+  font-weight: normal;
+  font-size: 14px;
+  display: block;
+}
+#detalle-oficina .data ul {
+  color: #59595a;
+  list-style: none;
+  padding: 0;
+  margin: 15px 30px;
+}
+#detalle-oficina .data li {
+  padding: 10px 10px 10px 40px;
+  background-size: 10% !important;
+}
+#detalle-oficina .data li b {
+  display: block;
+}
+#detalle-oficina .data li.phone {
+  background: url(images/phone-detail.png) left 10px no-repeat;
+}
+#detalle-oficina .data li.phone i {
+  width: 20px;
+  height: 20px;
+  background: url(images/contact-phone.png) center no-repeat;
+  float: left;
+  background-size: 90%;
+  margin-right: 10px;
+}
+#detalle-oficina .data li.clock {
+  background: url(images/clock.png) left 10px no-repeat;
+}
+#detalle-oficina .data li.special {
+  background: url(images/special.png) left 10px no-repeat;
+}

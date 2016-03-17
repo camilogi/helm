@@ -1,0 +1,129 @@
+/*Changed from 89px to 239px*/
+#image-verification .ui-content {
+  padding-top: 239px !important;
+}
+#image-verification .content {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#image-verification .content p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #59595a;
+}
+#image-verification .content .image-verification {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+#image-verification .content .image-verification.error {
+  border: 1px solid #cc3511;
+  box-shadow: 0px 0px 10px 1px #cc3511;
+}
+#image-verification .content .image-verification img {
+  width: 30%;
+}
+#image-verification .content .ui-checkbox {
+  margin: 0;
+}
+#image-verification .content .ui-checkbox input {
+  position: absolute;
+  top: 19px;
+  margin: 0;
+  left: 11px;
+  opacity: 0;
+}
+/*Added styles to checkbox on off status*/
+.ui-btn.ui-checkbox-off:after{
+  border: 2px solid #bfbfbf;
+  background-color: transparent;
+  border-radius: 0px;
+}
+/*Added styles to checkbox on On status*/
+.ui-btn.ui-checkbox-on:after{
+  background-color: transparent;
+  border: 2px solid #bfbfbf;
+  border-radius: 0px;
+  color: #cb171e;
+  content: '';
+  background-image: url('images/check.png') !important;
+  background-size: 12px;
+  background-position: center;
+  display: block;
+}
+#image-verification .ui-icon-check:after{
+  background-color: transparent;
+  border-color: transparent;
+}
+#image-verification .ui-btn.ui-checkbox-on.ui-btn-a:after{
+  background-color: transparent;
+  border-color: transparent;
+  color: #cb171e;
+}
+#image-verification .content span.confirm {
+  float: left;
+  margin-left: 30px; /*Changed to 30px from 10px*/
+  font-size: 15px;
+  width: 240px;
+  color: #59595a;
+}
+#image-verification .content span.confirm.error {
+  color: #cc3511;
+}
+#image-verification .content .info {
+  background: #f5f5f5;
+  font-size: 12px;
+  color: #59595a;
+  float: left;
+  clear: both;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: Tahoma;
+  border-radius: 8px;
+  text-align: center;
+}
+#image-verification .content .info a {
+  color: #0000ff;
+  text-decoration: none;
+  font-family: Tahoma;
+}
+#image-verification .content form .ui-input-text {
+  float: left;
+  width: 100%;
+  border: 1px solid #747475;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+#image-verification .content form input {
+  padding-left: 36px;
+  background: url(images/icon-lock.png) no-repeat 10px;
+  background-size: auto 50%;
+}
+#image-verification .content form input.error {
+  border: 1px solid #cc3511;
+  box-shadow: 0px 0px 10px 1px #cc3511;
+}
+#image-verification .error-message {
+  background: #cc3511;
+  color: #FFF;
+  font-size: 14px;
+  position: absolute;
+  /*bottom: 70px;*/
+  top: 90px;
+  width: 100%;
+  padding: 5px 0 !important;
+  text-align: center;
+  display: none;
+}
+#image-verification .error-message div {
+  background: url(images/icon-error-white.png) no-repeat 10px center;
+  background-size: auto 100%;
+  width: 300px;
+  margin: 0 auto;
+}
+#image-verification label{
+  background: transparent;
+  border: none;
+}

@@ -1,0 +1,157 @@
+
+.advances .ui-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.advances .info {
+  padding: 6px 5px;
+}
+.advances .info.bb {
+  border-bottom: 1px solid #f59346;
+}
+.advances .info .credit-card {
+  width: 50px;
+  height: 38px;
+  background: url(images/icon-credit-card.png) no-repeat center;
+  background-size: 70%;
+  float: left;
+  margin-right: 20px;
+}
+.advances .info .world {
+  background: url(images/icon-world.png) no-repeat center;
+}
+.advances .content .soft {
+  color: #59595a;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.advances .info > div {
+  width: 35px;
+  height: 38px;
+  background-size: 70% !important;
+  float: left;
+  margin-right: 20px;
+}
+.advances .info div.transferences {
+  background: url(images/icon-round-arrows.png) no-repeat center;
+}
+.advances .info div.message {
+  background: url(images/icon-message-light.png) no-repeat center;
+}
+.advances .info div.location-light {
+  background: url(images/icon-location-light.png) no-repeat center;
+}
+.advances .info div.money {
+  background: url(images/icon-money.png) no-repeat center;
+  background-size: 44% !important;
+}
+.advances .info p {
+  margin: 0;
+  font-weight: bold;
+  color: #59595a;
+  font-size: 14px;
+}
+.advances .info p:last-child {
+  font-size: 16px;
+}
+.advances .content > span {
+  color: #59595a;
+  font-weight: bold;
+  font-size: 14px;
+  background: #f5f5f5;
+  display: block;
+  padding: 8px;
+  padding-left: 20px;
+}
+.advances#opening .content > span {
+  background: transparent;
+}
+.advances#opening .days {
+  color: #59595a;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px;
+  padding-left: 20px;
+}
+.advances .content > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.advances .content > ul li {
+  color: #59595a;
+  padding: 8px 15px;
+  font-size: 16px;
+  background: url(images/custom-arrow-orange.png) no-repeat 30px center;
+  background-size: auto 50%;
+  padding-left: 55px;
+  cursor: pointer;
+}
+.advances.with-amount .content .ui-input-text {
+  margin: 6px 15px;
+  width: 90px;
+  display: inline-block;
+}
+.advances .content .ui-input-text + b {
+  font-weight: normal;
+  font-size: 13px;
+  color: #59595a;
+}
+.advances .content .amount + .input-helper .ui-input-text {
+  width: 100%;
+}
+.advances .content .input-helper {
+  padding: 0 30px 0 0;
+}
+.advances .content .button {
+  margin: 20px auto;
+  width: 70%;
+}
+.advances .toggle-contact {
+  overflow: auto;
+}
+.advances .toggle-contact span {
+  width: 50%;
+  padding: 10px 0;
+  padding-bottom: 9px;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+.advances .toggle-contact span.selected {
+  background: #59595a;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+.advances ul.giros {
+  border-top: 1px solid #acacac;
+  position: relative;
+}
+.advances ul.giros li.arrow {
+  width: 16px;
+  height: 23px;
+  background: url(images/custom-arrow-orange.png) center no-repeat !important;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 3%;
+  padding: 0 !important;
+}
+.advances ul.giros.odd li.arrow {
+  top: 1px;
+  margin-top: 0;
+}
+.advances ul.giros li {
+  line-height: 25px;
+}
+.advances ul.giros.no-odd li:not(.arrow) {
+  background: #fff !important;
+}
+.advances ul.giros li span:last-child {
+  width: 40%;
+  padding-right: 10%;
+}

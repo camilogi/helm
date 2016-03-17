@@ -1,0 +1,284 @@
+#contact .ui-content{padding-top: 92px !important;}
+#contact .onContactNoLogin {
+  padding-top: 89px !important
+}
+#contact .info.bb{border-bottom: none;}
+#contact .toggle-contact {
+  overflow: auto;
+  border-top: 1px solid #b7b9b8;
+}
+#contact .toggle-contact span {
+  width: 50%;
+  padding-bottom: 9px;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #b7b9b8;
+  background: #FFF;
+  cursor: pointer;
+  color: #9d9d9d;
+  line-height: 43px;
+  box-sizing: border-box;
+}
+#contact .toggle-contact span:first-child{border-right: 1px solid #b6b7b9;}
+#contact .toggle-contact span.selected {
+  background: #FFF;
+  color: #ff7f18;
+  font-weight: bold;
+  border-bottom: 1px solid #ff7f18;
+}#contact .toggle-contact span, #contact .toggle-contact span.selected{
+  height: 43px;
+  padding: 0;
+}
+#contact .form {
+  padding: 15px;
+}
+#contact .form .ui-input-text {
+  margin-bottom: 15px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+#contact .form .ui-select .ui-btn,
+#contact .form textarea,
+#contact .form .ui-input-text input {
+  border: 1px solid #aaa;
+  /*line-height: 25px;*/
+  padding-left: 45px;
+  background-size: 22.5px !important;
+  border-radius: 0 !important;
+  background-color: #fff !important;
+}
+#contact .form textarea{border: 1px solid #aaa !important;}
+/*After focus*/
+#contact .form .after-focus{
+  box-shadow: 0px 0px 5px 0px rgba(20, 177, 10, 0.5);
+  border: 1px #14b10a solid !important;
+}
+#contact .form .ui-select .ui-btn span {
+  text-align: left;
+  color: #999;
+  font-weight: normal;
+}
+#contact .form .ui-input-text input[name="name"] {
+  background: url(images/input-name.png) no-repeat 11.25px center; 
+}
+#contact .form .ui-input-text input[name="email"] {
+  background: url(images/input-email.png) no-repeat 11.25px center; 
+}
+#contact .form .ui-select .ui-btn {
+  background: url(images/input-subject.png) no-repeat 300px center; 
+}
+#contact .form textarea[name="message"] {
+  background: url(images/input-message.png) no-repeat 11.25px 8.75px; 
+}
+
+#contact .phone {
+  display: none;
+}
+#contact .phone .phone-info {
+  display: block;
+  width: 75%;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #545454;
+}
+#contact .phone ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  overflow: auto;
+}
+/*#contact .phone ul li {
+  float: left;
+  width: 50%;
+  background: url(images/contact-phone.png) 10px center no-repeat #f1f1f1;
+  background-size: 20px;
+  padding: 5px 0;
+}*/
+#contact .phone ul li:nth-child(4n),
+#contact .phone ul li:nth-child(4n-1) {
+  background-color: #fff;
+}
+#contact .phone ul li a span{
+  padding-left: 30px;
+}
+#contact .phone ul li span {
+  display: block;
+  line-height: 20px;
+  font-size: 13px;
+}
+#contact .phone ul li span:last-child {
+  font-weight: bold;
+}
+#contact .phone ul li {
+  float: left;
+  width: 50%;
+  padding: 5px 0px;
+  text-align: center;
+  text-align: center;
+}
+#contact .phone ul li a{
+  background: url("images/telephone.png") no-repeat scroll 4px center / 20px auto #54595c;
+  display: block;
+  font-size: 11px;
+  border-radius: 15px;
+  color: #FFF;
+  margin: auto;
+  max-width: 140px;
+  padding: 3px 0px;
+}
+#phone-modal .contact-line li a.ui-link{
+  max-width: 140px;
+  padding: 1px 0px;
+}
+#contact .phone1 ul li span {
+  line-height: 6px !important;
+}
+#contact .popup-title{
+  padding-bottom: 10px;
+  font-size:14px;
+  font-weight: bold;
+  /*border-bottom: 2px solid rgba(85, 85, 85, .5);*/
+  text-align:center;
+}
+/*Ajustes contact para backbone*/
+#connect-error-popup, #connect-error-popup [data-role="popup"]{
+  width: 100%;
+  max-width: 100% !important;
+}
+#connect-error .onContactNoLogin {
+  padding-top: 89px !important
+}
+#connect-error .toggle-contact {
+  overflow: auto;
+}
+#connect-error .toggle-contact span {
+  width: 50%;
+  padding: 10px 0;
+  padding-bottom: 9px;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+#connect-error .toggle-contact span.selected {
+  background: #59595a;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+#connect-error .form {
+  padding: 15px;
+}
+#connect-error .form .ui-input-text {
+  margin-bottom: 15px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+#connect-error .form .ui-select .ui-btn,
+#connect-error .form textarea,
+#connect-error .form .ui-input-text input {
+  border: 1px solid #aaa !important;
+  line-height: 25px;
+  padding: .4em;
+  padding-left: 45px;
+  background-size: 22.5px !important;
+  border-radius: 0 !important;
+  background-color: #fff !important;
+}
+#connect-error .form .ui-select .ui-btn span {
+  text-align: left;
+  color: #999;
+  font-weight: normal;
+}
+#connect-error .form .ui-input-text input[name="name"] {
+  background: url(images/input-name.png) no-repeat 11.25px center; 
+}
+#connect-error .form .ui-input-text input[name="email"] {
+  background: url(images/input-email.png) no-repeat 11.25px center; 
+}
+#connect-error .form .ui-select .ui-btn {
+  background: url(images/input-subject.png) no-repeat 11.25px center; 
+}
+#connect-error .form textarea[name="message"] {
+  background: url(images/input-message.png) no-repeat 11.25px 8.75px; 
+}
+
+#connect-error .phone {
+  display: none;
+}
+#connect-error .phone .phone-info {
+  display: block;
+  width: 85%;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+#connect-error .phone ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+}
+/*#connect-error .phone ul li {
+  float: left;
+  width: 50%;
+  background: url(images/contact-phone.png) 10px center no-repeat #f1f1f1;
+  background-size: 20px;
+  padding: 5px 0;
+}*/
+#connect-error .phone ul li:nth-child(4n),
+#connect-error .phone ul li:nth-child(4n-1) {
+  background-color: #fff;
+}
+#connect-error .phone ul li span {
+  display: block;
+  line-height: 20px;
+}
+#connect-error .phone ul li span:last-child {
+  font-weight: bold;
+}
+#connect-error .phone ul li {
+    float: left;
+    width: 50%;
+    /*background: url("images/contact-phone.png") no-repeat scroll 10px center / 20px auto #FFF;*/
+    padding: 5px 0px;
+}
+#connect-error .phone1 ul li span {
+  line-height: 6px !important;
+}
+#connect-error .popup-title{
+  padding-bottom: 10px;
+  font-size:16px;
+  font-weight: bold;
+  /*border-bottom: 2px solid rgba(85, 85, 85, .5);*/
+  text-align:center;
+  color: #1b191a;
+}
+#connect-error p{
+  text-align: center;
+}
+.intro-txt{color: #9f9f9f;}
+.intro-txt b{color: #59595b;
+}
+
+/*------------newlabels------------*/
+.select-newlabel {
+height:1em !important;
+}
+select:required:invalid {
+  color: #aaa !important;
+}
+option[value=""][disabled] {
+  display: none !important;
+}
+option {
+  color: #59595a !important;
+}

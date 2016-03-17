@@ -1,0 +1,74 @@
+#login {
+  background-image:url(images/login-bg.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-position:center;
+  background-size: 100%;
+  background-attachment:fixed; 
+  height: 100%; /*Adding hegiht 100%*/
+}
+/*#login {
+  background-image:url(images/login-bg.jpg);
+  background-repeat:no-repeat;
+  background-position:left;
+  background-position:center;
+  background-size: cover;
+}*/
+#login.white {
+  background: #fff;
+}
+#login .ui-content {
+  padding: 0 !important;
+  padding-top: 159px !important;
+}
+.login {
+  width: 100%;
+}
+.login form {
+  padding-top: 150px;
+  width: 250px;
+  margin: 0 auto;
+}
+.login form .ui-input-text {
+  opacity: .9;
+  border: none;
+  border-radius: 0;
+}
+.login form input[name="user"] {
+  padding-left: 36px;
+  background: url(images/icon-user.png) no-repeat 8px center;
+  background-size: auto 50%;
+  opacity: .9;
+}
+/*Change login class to header class*/
+.header .indicators {
+  background: #f7f7f7;
+  opacity: .7;
+  text-shadow: none;
+  color: #fff;
+  font-size: 12.5px;
+  width: 100%;
+  position: relative !important; /* Changed from absolute to relative*/
+  top: 0px !important; /* Changed from 420px to 0 */
+  border-bottom: 2px solid #c0c2c1;
+}
+/*Change login class to header class*/
+.header .indicators div{
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  box-sizing: border-box;
+  height: 42px;
+  line-height: 42px;
+}
+.header .indicators div:last-child{
+  margin-left: -4px;
+  border-left: 2px solid #c0c2c1;
+}
+/*Removing default padding*/
+.header .indicators div p{
+  font-size: 10px;
+  margin: 0;
+  color: #686868;
+  text-align: center;
+}

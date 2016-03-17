@@ -1,0 +1,38 @@
+#ticket .ui-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul.ticket-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.ticket-list li {
+  font-size: 11px !important;
+  color: #59595a;
+  overflow: auto;
+  line-height: 35px;
+  background: none !important;
+  padding: 0 15px !important;
+}
+ul.ticket-list li:nth-child(even) {
+  background: #f1f1f1 !important;
+}
+ul.ticket-list li span {
+  float: left;
+  width: 50%;
+}
+ul.ticket-list li span.bold {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left !important;
+}
+ul.ticket-list li span:last-child {
+  text-align: right;
+}
+
+#ticket .btn-container {
+  width: 70%;
+  margin: 20px auto;
+}
