@@ -1,0 +1,66 @@
+.movements {
+  background: #fff;
+}
+.movements .ui-content {
+  padding: 0;
+}
+.movements .ui-content * {
+  color: #59595a !important;
+}
+.movements .info {
+  overflow: auto;
+  border-bottom: 1px solid #f59346;
+}
+.movements .info > * {
+  float: left;
+}
+.movements .info .icon-pig {
+  background: url(images/icon-pig.png) no-repeat center;
+  width: 50px;
+  height: 50px;
+  background-size: auto 65% !important;
+}
+.movements .info p {
+  margin: 0;
+}
+.movements .info .detail {
+  margin-left: 10px;
+  padding-top: 5px; 
+}
+.movements .info .title {
+  font-size: 16px;
+}
+.movements .info .balance {
+  font-size: 14px;
+  font-weight: bold;
+}
+.movements h4 {
+  padding: 0 15px;
+}
+.movements h4 span:last-child {
+  float: right;
+  font-size: 19px;
+}
+.movements ul {
+  padding: 0;
+  margin: 0;
+}
+.movements .greyed-list {
+  display: block !important;
+}
+#movements .greyed-list li div {
+  line-height: 28px;
+}
+.movements .movement-details {
+  background: url(images/movement-details.png) no-repeat center;
+  display: block;
+  height: 30px;
+  margin-top: 30px;
+  background-size: auto 100%;
+}
+.movements .loading {
+  background: url(images/loading.png) no-repeat center;
+  height: 30px;
+  background-size: auto 100%;
+  margin-top: 30px;
+}

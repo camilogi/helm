@@ -1,0 +1,13 @@
+.atm-title{
+	background-color: #db7a1b;
+	color: #FFF;
+	height: 48px;
+	line-height: 48px;
+	position: relative;
+}
+.close-modal{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #FFF;
+}

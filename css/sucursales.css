@@ -1,0 +1,223 @@
+#sucursales .ui-content,
+#sucursales-busqueda .ui-content{padding-top: 71px !important;}
+#sucursales .info.bb,
+#sucursales-busqueda .info.bb{border-bottom: none;}
+#sucursales .toggle-contact,
+#sucursales-busqueda .toggle-contact {
+  overflow: auto;
+  border-top: 1px solid #b7b9b8;
+}
+#sucursales .toggle-contact span,
+#sucursales-busqueda .toggle-contact span {
+  width: 50%;
+  padding-bottom: 9px;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #b7b9b8;
+  background: #FFF;
+  cursor: pointer;
+  color: #9d9d9d;
+  line-height: 43px;
+  box-sizing: border-box;
+}
+#sucursales .toggle-contact span:first-child,
+#sucursales-busqueda .toggle-contact span:first-child{border-right: 1px solid #b6b7b9;}
+#sucursales .toggle-contact span.selected,
+#sucursales-busqueda .toggle-contact span.selected {
+  background: #FFF;
+  color: #ff7f18;
+  font-weight: bold;
+  border-bottom: 1px solid #ff7f18;
+}
+#sucursales .toggle-contact span,
+#sucursales .toggle-contact span.selected,
+#sucursales-busqueda .toggle-contact span,
+#sucursales-busqueda .toggle-contact span.selected{
+  height: 43px;
+  padding: 0;
+}
+.oficina-cercana, .sucursales-img{
+  width: 15px;
+  vertical-align: middle;
+}
+.sucursales-p{
+  width: 90%;
+  margin: auto;
+  color: #666666;
+  margin-top: 10px;
+}
+.intro-buscar-oficina{
+  text-align: center;
+  margin-bottom: 10px;
+}
+ul.list-checks{
+  width: 90%;
+  padding: 0;
+  margin: auto;
+}
+.list-checks li{
+  display: inline-block;
+  list-style: none;
+}
+.list-checks li:first-child{width: 80px;}
+.list-checks li label.ui-checkbox{
+  background-color: transparent;
+  border: none;
+  padding: 0px 0px 0px 30px;
+  font-weight:unset !important;
+}
+.list-checks li label.ui-checkbox:hover{background-color: transparent;}
+.list-checks li input[type="checkbox"]{opacity: 0;}
+.list-checks li span.confirm{
+  width: auto;
+  font-size: 12px;
+  height: 26px;
+  line-height: 32px;
+}
+.list-checks li .ui-btn.ui-checkbox-on::after {
+  background-color: transparent;
+  border: 2px solid #BFBFBF;
+  border-radius: 0px;
+  color: #e17e00;
+  content: "";
+  background-image: url("images/check-orange.png") !important;
+  background-size: 12px auto;
+  background-position: center center;
+  display: block;
+}
+#sucursales .ui-field-contain{
+  width: 90%;
+  margin: auto;
+  border-bottom: none;
+  padding: 0.1em 0px;
+}
+#sucursales .ui-select .ui-btn{
+  background-color: transparent;
+  border: 1px solid #9b9b9b;
+  color: #969696;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 0px;
+}
+#sucursales .ui-btn-icon-right::after{
+  background-color: transparent;
+  background-image: url('images/arrow-down.png');
+  background-size: 22px;
+  right: inherit;
+  left: 10px;
+}
+#sucursales .content .button{width: 90%;}
+/* POP UP*/
+#atm-popup{
+  max-width: 100% !important;
+  width: 100%;
+  height: 100%;
+  top: 0px !important;
+  left: 0px !important;
+}
+#atm-popup [data-role="popup"]{
+  max-width: 100%;
+  height: 100%;
+}
+#atm-popup [data-role="popup"] [role="main"]{
+  padding: 0px;
+}
+#atm-popup .close-modal{
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+#atm-popup .atm-title{
+  padding: 10px;
+}
+#atm-popup .image-atm{height: 150px;}
+#atm-popup .image-atm img{
+  height: 100%;
+}
+.atm-office{
+  height: 70px;
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+  padding-top: 13px;
+  box-sizing: border-box;
+}
+.atm-office h5, .atm-office h6{
+  margin: 5px 5px 3px 15px;
+}
+.atm-office h5, .atm-content h5{
+  color: #272324;  
+}
+.atm-office h6, .atm-content h6{
+  color: #c6c6c6;  
+}
+.atm-content ul{padding-left: 25px;}
+.atm-content li{
+  list-style: none;
+  position: relative;
+  height: 31px;
+  line-height: 31px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+.atm-content-tel{
+  background-image: url('images/icon-tel.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 31px;
+}
+.atm-content-tel h5{margin: 0 0 0 20px;}
+#atm-popup .atm-content-tel a {
+  background: url("images/telephone.png") no-repeat scroll 4px center / 20px auto #54595c;
+  display: block;
+  font-size: 11px;
+  border-radius: 15px;
+  color: #FFF;
+  margin: auto;
+  max-width: 140px;
+  padding: 3px 0px;
+  height: 26px;
+  box-sizing: border-box;
+  position: relative;
+  top: -28px;
+    left: 40px
+}
+#atm-popup .atm-content-tel a span{
+  margin: 0;
+  padding-left: 50px;
+  height: 26px;
+  line-height: 23px;
+}
+li.atm-content-center{
+  background-image: url('images/icon-clock.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 31px;
+  line-height: 14px;
+}
+.atm-content-center h5{margin: 0 0 0 20px;}
+.atm-content-center h6{margin: 5px 5px 3px 20px;}
+.atm-content-services{
+  background-image: url('images/icon-star.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 31px;
+}
+.atm-content-services h5{margin: 0 0 0 20px;}
+#sucursales-busqueda li{background-color: #f2f2f2;}
+#sucursales-busqueda li h2{
+  color: #525a5c;
+}
+#sucursales-busqueda .list-atm li a{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+#sucursales-busqueda .list-atm li p{
+  color: #787a91;
+}
+#sucursales-busqueda li:nth-child(2n+1){
+  background-color: #FFF;
+}

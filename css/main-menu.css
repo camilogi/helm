@@ -1,0 +1,115 @@
+
+#main-menu {
+  background: #fff;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+#main-menu .ui-panel-inner {
+  padding: 0;
+}
+#main-menu .logo {
+  width: 95px;
+  height: 54px;
+  background: url(images/logo.png) no-repeat center;
+  background-size: 100%;
+  margin: 15px auto 0;
+}
+#main-menu .logo + p {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 0 15px;
+}
+#main-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#main-menu .ui-panel-inner > ul > li:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+#main-menu .ui-panel-inner > ul > li {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+#main-menu ul li {
+  line-height: 35px;
+}
+#main-menu ul li h3,
+#main-menu ul li a {
+  color: #59595a;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  line-height: 37px;
+}
+#main-menu ul li ul li {
+  padding-left: 50px;
+  background: url(images/custom-arrow.png) no-repeat 30px center;
+  background-size: 12px;
+  line-height: 26px;
+}
+#main-menu ul li ul li a {
+  font-weight: normal;
+  line-height: 26px;
+}
+.safe-exit{
+  display: block;
+  margin: 15px auto;
+}
+#main-menu button {
+  margin: auto;
+  width: 80%;
+}
+/*icons*/
+#main-menu li span {
+  width: 30px;
+  height: 37px;
+  float: left;
+  background-size: auto 20px !important;
+  margin: 0 5px;
+}
+#main-menu .products span {
+  background: url(images/icon-abacus.png) no-repeat center;
+}
+#main-menu .advances span {
+  background: url(images/icon-credit-card.png) no-repeat center;
+}
+#main-menu .transferences span {
+  background: url(images/icon-round-arrows.png) no-repeat center;
+}
+#main-menu .payments span,
+#main-menu .wires .aperture span {
+  background: url(images/icon-money.png) no-repeat center;
+}
+#main-menu .wires span {
+  background: url(images/icon-world.png) no-repeat center;
+}
+#main-menu .aperture span {
+  background: url(images/icon-money.png) no-repeat center;
+}
+.ui-collapsible-heading .ui-btn {
+	border:none;
+	border-style:hidden;
+	border-color:#ECECEC !important;
+}
+.ui-btn .ui-collapsible .ui-collapsible-collapsed .ui-li-static .ui-listview {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.ui-collapsible-themed-content .ui-collapsible-content {
+    border-width: 0px 0px 1px;
+    border-style: none;
+}
+.wires .ui-collapsible .ui-collapsible-themed-content .ui-collapsible-collapsed .ui-li-static {
+	  border-bottom: 1px solid #e5e5e5 !important;
+}
+.list-cleared {
+	border-top:hidden !important;
+	border-bottom: 1px solid #e5e5e5 !important;
+	padding: 0.1em 0.1em !important;
+}
+.advances .ui-icon-carat-r:after,
+.products .ui-icon-carat-r:after{background: none;}
+.ui-btn-icon-left{padding-left: 1em;}

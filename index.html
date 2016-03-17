@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Helm Layout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,target-densitydpi=device-dpi">
+
+  <link rel="stylesheet" type="text/css" href="jquery-mobile/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/main-menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/movements.css" />
+  <link rel="stylesheet" type="text/css" href="css/login.css" />
+  <link rel="stylesheet" type="text/css" href="css/image-verification.css" />
+  <link rel="stylesheet" type="text/css" href="css/questions.css" />
+  <link rel="stylesheet" type="text/css" href="css/advances.css" />
+  <link rel="stylesheet" type="text/css" href="css/confirm.css" />
+  <link rel="stylesheet" type="text/css" href="css/ticket.css" />
+  <link rel="stylesheet" type="text/css" href="css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="css/sucursales.css" />
+  <link rel="stylesheet" type="text/css" href="css/atm.css" />
+  <link rel="stylesheet" type="text/css" href="css/oficinas.css" />
+  <!-- slider -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div class="splash">
+    <div class="logo">
+      <div class="text"></div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- HEADER -->
+  <div data-role="header" class="header">
+    <!-- Added indicators to header and removed from login section-->
+    <div class="indicators">
+        <div>
+          <p>Dólar (TRM) $2.422,03 &nbsp;&nbsp;&nbsp; </p>
+        </div>
+        <div>
+          <p>DTF (E.A.) $4,19%</p>
+        </div>
+      </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="link">
+                <a href="#nogo"><img src="css/images/mall-logo.png" alt="Mall de compras"/></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="css/images/mall-logo.png" alt="Mall de compras" class="small-image-slider">
+              <p>Test Banner 2</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="css/images/mall-logo.png" alt="Mall de compras" class="small-image-slider">
+              <p>Test Banner 2</p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <button class="back-to"><img src="css/images/back-to.png" width="15" />Atrás</button>
+   <a href="#main-menu">
+    <span class="icon-menu bg-cover"></span>
+  </a>
+  <div id="logo" class="bg-cover"></div>
+  <span>bienvenido a helm personas</span>
+  <div class="info-bar">
+    <span>Hola, Claudia Sofía</span>
+    <span>
+      <p>Sesión Anterior</p>
+      <p>05/03/2015 - 3:54 PM</p>
+    </span>
+  </div>
+</div>
+<!--  -->
+
+<!-- LINKS ENTRADA -->
+<div data-role="page" id="intro">
+  <div role="main" class="intro">
+    <a href="#under" class="intro-link"><img src="css/images/corpbanca.jpg" alt="Corpbanca"></a>
+    <a href="#login" class="intro-link"><img src="css/images/helm-bank.jpg" alt="Helm"></a>
+  </div>
+</div>
+<!--  -->
+
+<!-- UNDER CONSTRUCTION -->
+<div data-role="page" id="under">
+  <div role="main" class="under">
+    <a data-navigate="intro"><img src="css/images/back-under.jpg" alt=""></a>
+    <img src="css/images/en_construccion.jpg" alt="Corpbanca" style="margin-top: -6px;">
+  </div>
+</div>
+<!--  -->
+
+<!-- LOGIN -->
+<div data-role="page" id="login">
+  <div role="main" class="ui-content">
+    <div class="login">
+      <form>
+        <input name="user" type="text" class="input-login disablecopypaste" placeholder="Usuario" maxlength="15" />
+        <button class="button" data-navigate="image-verification">Entrar</button>
+      </form>
+      <!-- Removed from login and added to header section -->
+      <!-- <div class="indicators">
+        <div>
+          <p>Indicadores económicos</p>
+          <p>Dólar (TRM) $2.422,03 &nbsp;&nbsp;&nbsp; DTF (E.A.) $4,19%</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- IMAGE VERIFICATION -->
+<div data-role="page" id="image-verification">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <p>Perro de caza</p>
+      <div class="image-verification">
+        <img src="css/images/dog.png" alt="" />
+      </div>
+      <!-- Added label to apply checkbox styles -->
+      <label class="ui-checkbox">
+        <input type="checkbox" id="vf-image" />
+        <span class="confirm">Confirmo que esta es la imagen que seleccioné</span>
+      </label>
+      <div class="info">
+        Si en algún momento no encuentras la imagen y la frase correcta, <b>no digites tu contraseña</b>
+        y llama inmediatamente a nuestra <b>Banca telefónica</b>
+      </div>
+      <form>
+        <input type="password" class="disablecopypaste" id="password" placeholder="Clave" maxlength="10" />
+        <button class="button verificate-image">Entrar</button>
+      </form>
+    </div>
+  </div>
+  <div class="error-message hidden">
+    <div></div>
+  </div>
+</div>
+<!--  -->
+
+<!-- QUESTIONS -->
+<div data-role="page" id="questions">
+  <div role="main" class="ui-content">
+    <div class="content">
+      Por favor, responde a la(s) siguiente(s)
+      pregunta(s) para confirmar tu identidad:
+      <form>
+        <p>1. ¿Cuántos meses duró tu primer empleo?</p>
+        <input type="text" />
+        <p>2. ¿Cuál es el nombre de tu profesor de primaria?</p>
+        <input type="text" />
+        <p>3. ¿Cuál es tu color favorito?</p>
+        <input type="text" />
+        <button class="button" data-navigate="products">Aceptar</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- PRODUCTS -->
+<div data-role="page" id="products">
+  <div role="main" class="ui-content">
+    <ul class="select-view" data-role="listview">
+      <li>
+        <span class="icon-pig"></span>
+        <div class="detail">
+          <p class="title">Cuentas de Ahorro</p>
+          <p>El saldo total es</p>
+          <p class="balance">$2.127.270,87</p>
+        </div>
+        <span class="arrow"></span>
+      </li>
+      <li class="accounts greyed-list">
+        <ul data-role="listview">
+          <li>
+            <div>
+              <p>Cuenta de ahorro</p>
+              <p>****5436</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$1.050.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Ahorro programado</p>
+              <p>****2213</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$550.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>AFC</p>
+              <p>****9974</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$650.320,00</span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="icon-abacus"></span>
+        <div class="detail">
+          <p class="title">Cuentas Corrientes</p>
+          <p>El saldo total es</p>
+          <p class="balance">-$4.657.432,24</p>
+        </div>
+        <span class="arrow"></span>
+      </li>
+      <li class="accounts greyed-list">
+        <ul data-role="listview">
+          <li>
+            <div>
+              <p>Cuenta Corriente</p>
+              <p>****2451</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$1.650.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Cuenta Corriente</p>
+              <p>****5436</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$1.650.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Cuenta Corriente</p>
+              <p>****3580</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$1.050.000,00</span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="icon-credit-card"></span>
+        <div class="detail">
+          <p class="title">Tarjetas de Crédito</p>
+          <p>Deuda total a la fecha</p>
+          <p class="balance">$1.487.421,23</p>
+        </div>
+        <span class="arrow"></span>
+      </li>
+      <li class="accounts greyed-list">
+        <ul data-role="listview">
+          <li>
+            <div>
+              <p>Tarjeta de Crédito</p>
+              <p>****7860</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$650.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Tarjeta de Crédito</p>
+              <p>****7390</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$450.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Tarjeta de Crédito</p>
+              <p>****1600</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$350.320,00</span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="icon-check"></span>
+        <div class="detail">
+          <p class="title">Credicash</p>
+          <p>Deuda total a la fecha</p>
+          <p class="balance">$8.675.098.15</p>
+        </div>
+        <span class="arrow"></span>
+      </li>
+      <li class="accounts greyed-list">
+        <ul data-role="listview">
+          <li>
+            <div>
+              <p>Ahorro programado</p>
+              <p>****5436</p>
+            </div>
+            <span class="arrow"></span>
+            <span class="qty">$7.650.320,00</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--  -->
+
+<!-- MOVEMENTS  -->
+<div data-role="page" id="movements" class="movements">
+  <div role="main" class="ui-content">
+    <div class="info">
+      <span class="icon-pig"></span>
+      <div class="detail">
+        <p class="title">Detalle</p>
+        <p class="balance">Cuentas de Ahorro ****5436</p>
+      </div>
+    </div>
+    <h4>
+      <span>El saldo total es</span>
+      <span>$2.127.270,87</span>
+    </h4>
+    <ul>
+      <li class="greyed-list">
+        <ul data-role="listview">
+          <li>
+            <div>
+              <p>Saldo disponible</p>
+            </div>
+            <span class="qty">$2.650.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Saldo en canje</p>
+            </div>
+            <span class="qty">$1.000.000,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Rendimientos día anterior</p>
+            </div>
+            <span class="qty">$1.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>Saldo disponible</p>
+            </div>
+            <span class="qty">$3.651.320,00</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#movement-detail" class="movement-details"></a>
+  </div>
+</div>
+<!--  -->
+
+<!-- MOVEMENT DETAIL -->
+<div data-role="page" id="movement-detail" class="movements">
+  <div role="main" class="ui-content">
+    <div class="info">
+      <span class="icon-pig"></span>
+      <div class="detail">
+        <p class="title">Detalle</p>
+        <p class="balance">Cuentas de Ahorro ****5436</p>
+      </div>
+    </div>
+    <ul>
+      <li class="greyed-list">
+        <ul data-role="listview">
+          <li>
+            <div>
+              <p>21/12/2014</p>
+              <p>Consignación Sucursal Valle de Lili</p>
+            </div>
+            <span class="qty">$250.000,00</span>
+          </li>
+          <li>
+            <div>
+              <p>16/12/2014</p>
+              <p>Retiro sucursal Niza</p>
+            </div>
+            <span class="qty">- $200.000,00</span>
+          </li>
+          <li>
+            <div>
+              <p>15/05/2014</p>
+              <p>Pago Archie’s</p>
+            </div>
+            <span class="qty">- $50.320,00</span>
+          </li>
+          <li>
+            <div>
+              <p>08/09/2014</p>
+              <p>Retiro sucursal Suba</p>
+            </div>
+            <span class="qty">- $500.000,00</span>
+          </li>
+          <li>
+            <div>
+              <p>28/08/2014</p>
+              <p>Consignación Sucursal Av. Cali</p>
+            </div>
+            <span class="qty">$300.000,00</span>
+          </li>
+          <li>
+            <div>
+              <p>16/12/2014</p>
+              <p>Pago Creps and Waffles</p>
+            </div>
+            <span class="qty">- $200.000,00</span>
+          </li>
+          <li>
+            <div>
+              <p>15/05/2014</p>
+              <p>Retiro Sucursal Titán</p>
+            </div>
+            <span class="qty">- $50.000,00</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="loading"></div>
+  </div>
+</div>
+<!--  -->
+
+<!-- ADVANCES -->
+<div data-role="page" class="advances with-amount" id="advances">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info">
+        <div class="credit-card"></div>
+        <p>Avances de tu</p>
+        <p>Tarjeta de Crédito</p>
+      </div>
+      <span>Escoge la tarjeta de origen de los fondos</span>
+      <ul class="source toggle-founds">
+        <li>Tarjeta crédito ****7860</li>
+        <li>Tarjeta crédito ****2548</li>
+        <li>Tarjeta crédito ****1234</li>
+        <li>Tarjeta crédito ****3020</li>
+      </ul>
+      <span>Escoge el destino de los fondos</span>
+      <ul class="destination toggle-founds">
+        <li>Cuenta corriente ****001</li>
+        <li>Cuenta corriente ****002</li>
+        <li>Cuenta corriente ****003</li>
+        <li>Cuenta corriente ****004</li>
+      </ul>
+      <span>Número de cuotas</span>
+      <input type="number" /> <b>Meses</b>
+      <span class="amount">Monto del avance</span>
+      <div class="input-helper">
+        <input type="number" placeholder="$" />
+      </div>
+      <button data-navigate="confirm" class="button black">Continuar</button>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- CONFIRM -->
+<div data-role="page" id="confirm">
+  <div role="main" class="ui-content">
+    <div class="info header">
+      <div class="credit-card"></div>
+      <p>Confirmar tu</p>
+      <p>Transacción</p>
+    </div>
+    <ul class="ticket-list">
+      <li>
+        <span>Fecha:</span>
+        <span class="detalle-confirmar">12/10/2013 8:14 PM</span>
+      </li>
+      <li>
+       <span>Cuenta de origen:</span>
+       <span class="detalle-confirmar">Tarjeta Crédito****7865</span>
+     </li>
+     <li>
+      <span>Cuenta de destino:</span>
+      <span class="detalle-confirmar">CTE****2031</span>
+    </li>
+    <li>
+      <span>Monto:</span>
+      <span class="detalle-confirmar">$500.000</span>
+    </li>
+    <li>
+      <span>Costo de la transacción:</span>
+      <span class="detalle-confirmar">$0</span>
+    </li>
+    <li>
+      <span>Dirección IP:</span>
+      <span class="detalle-confirmar">181.157.86.16</span>
+    </li>
+  </ul>
+  <div class="btn-container">
+    <button class="button">Cancelar</button>
+  </div>
+  <div class="btn-container">
+    <button class="button black" data-navigate="ticket">Confirmar</button>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- TICKET -->
+<div data-role="page" id="ticket">
+  <div role="main" class="ui-content">
+    <div class="info header">
+      <div class="credit-card"></div>
+      <p>Comprobante de</p>
+      <p>Transacción</p>
+    </div>
+    <ul class="ticket-list">
+      <li>
+        <span>Fecha:</span>
+        <span class="detalle-confirmar">12/10/2013 8:14 PM</span>
+      </li>
+      <li>
+       <span>Cuenta de origen:</span>
+       <span class="detalle-confirmar">Tarjeta Crédito****7865</span>
+     </li>
+     <li>
+      <span>Cuenta de destino:</span>
+      <span class="detalle-confirmar">CTE****2031</span>
+    </li>
+    <li>
+      <span>Monto:</span>
+      <span class="detalle-confirmar">$500.000</span>
+    </li>
+    <li>
+      <span>Costo de la transacción:</span>
+      <span class="detalle-confirmar">$0</span>
+    </li>
+    <li>
+      <span>Dirección IP:</span>
+      <span class="detalle-confirmar">181.157.86.16</span>
+    </li>
+    <li>
+      <span>No. Confirmación (Ref):</span>
+      <span class="detalle-confirmar">96201429</span>
+    </li>
+  </ul>
+  <div class="btn-container">
+    <a href="#products"><button class="button black">Resumen de Productos</button></a>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- TRANSFERENCES -->
+<div data-role="page" class="advances with-amount" id="transferences-01">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info">
+        <div class="transferences"></div>
+        <p>Transferencias</p>
+        <p>A cuentas propias</p>
+      </div>
+      <span>Cuenta origen de la transferencia</span>
+      <ul class="source toggle-founds">
+        <li>Tarjeta crédito ****7860</li>
+        <li>Tarjeta crédito ****2548</li>
+        <li>Tarjeta crédito ****1234</li>
+        <li>Tarjeta crédito ****3020</li>
+      </ul>
+      <span>Cuenta destino de la transferencia</span>
+      <ul class="destination toggle-founds">
+        <li>Cuenta corriente ****001</li>
+        <li>Cuenta corriente ****002</li>
+        <li>Cuenta corriente ****003</li>
+        <li>Cuenta corriente ****004</li>
+      </ul>
+      <span class="amount">Monto del avance</span>
+      <div class="input-helper">
+        <input type="number" placeholder="$" />
+      </div>
+      <a data-rel="popup" data-position-to="window" href="#transferences-popup">
+       <button class="button black">Continuar</button>
+     </a>
+   </div>
+ </div>
+ <!-- TRANSFERENCES POPUP -->
+ <div data-role="popup" id="transferences-popup"
+ data-overlay-theme="b" data-theme="b">
+ <div role="main">
+   <span>Confirmación de origen de los fondos</span>
+   <p>
+     Bajo la gravedad de juramento manifiesto
+     que la utilización de este crédito está
+     destinado a la cancelación de obligaciones
+     de comercializadores de bienes o servicios
+   </p>
+   <button class="button pull-left" data-rel="back">Cancelar</button>
+   <button class="button black pull-right" data-navigate="transferences-02">Aceptar</button>
+ </div>
+</div>
+<!--  -->
+</div>
+<!--  -->
+
+<!-- CONFIRM TRANSFERENCE -->
+<div data-role="page" class="advances" id="transferences-02">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info bb">
+        <div class="transferences"></div>
+        <p>Confirmar tu</p>
+        <p>Transferencia</p>
+      </div>
+      <ul class="ticket-list">
+        <li>
+         <span>Cuenta de origen:</span>
+         <span>Cuenta de ahorros ****7865</span>
+       </li>
+       <li>
+         <span>Cuenta destino:</span>
+         <span>Cuenta de ahorros ****7865</span>
+       </li>
+       <li>
+         <span>Monto:</span>
+         <span>$250.000.000</span>
+       </li>
+       <li>
+         <span>Costo de la trx:</span>
+         <span>$0</span>
+       </li>
+       <li>
+         <span>Dirección IP:</span>
+         <span>192.161.1.1</span>
+       </li>
+     </ul>
+     <div class="btn-group half">
+       <button class="button">Modificar</button>
+       <button class="button black" data-navigate="voucher">Continuar</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- VOUCHER -->
+<div data-role="page" class="advances" id="voucher">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info bb">
+        <div class="transferences"></div>
+        <p>Comprobante</p>
+        <p>Transferencia exitosa</p>
+      </div>
+      <ul class="ticket-list">
+        <li>
+         <span>Fecha:</span>
+         <span>12/10/2013 8:14 PM</span>
+       </li>
+       <li>
+         <span>Cuenta de origen:</span>
+         <span>Cuenta de ahorros ****7865</span>
+       </li>
+       <li>
+         <span>Cuenta destino:</span>
+         <span>Cuenta de ahorros ****7865</span>
+       </li>
+       <li>
+         <span>Monto:</span>
+         <span>$250.000.000</span>
+       </li>
+       <li>
+         <span>Costo de la trx:</span>
+         <span>$0</span>
+       </li>
+       <li>
+         <span>Dirección IP:</span>
+         <span>192.161.1.1</span>
+       </li>
+       <li>
+         <span>No confirmacion (ref):</span>
+         <span>Realizar otra transferencia</span>
+       </li>
+     </ul>
+     <button class="button black">Realizar otra transferencia</button>
+   </div>
+ </div>
+</div>
+<!--  -->
+<!-- SUCURSALES -->
+<div data-role="page" class="advances" id="sucursales">
+  <div role="main" class="ui-content">
+    <div class="content" style="max-width: 640px ! important;">
+      <div class="info bb"></div>
+      <div class="toggle-contact">
+        <span data-contact-view="oficinas-cercanas" class="selected">
+          <img src="css/images/oficina-cercana.png" class="oficina-cercana">
+          Oficina Cercana
+        </span>
+        <span data-contact-view="buscar-oficina">
+          <img src="css/images/sucursales.png" width="15" class="sucursales-img">
+          Buscar Oficina
+        </span>
+      </div>
+      <div class="map-sucursales" data-contact-ref="oficinas-cercanas">
+        <a href="#atm" data-rel="popup" data-transition="pop">
+         <img src="css/images/example-map.png">
+        </a>
+      </div>
+    </div>
+    <div data-contact-ref="buscar-oficina">
+        <p class="sucursales-p intro-buscar-oficina">
+          Busca los cajeros y oficinas Helm Bank y Corpbanca más cercanos
+        </p>
+        <div class="ui-field-contain">
+          <label class="newlabel mb5 mt5">Seleccione ciudad</label>
+          <select data-icon="false">
+            <option value="1">The 1st Option</option>
+            <option value="2">The 2nd Option</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+          </select>
+        </div>
+        <div class="ui-field-contain">
+          <label class="newlabel mb5 mt15">Seleccione la zona</label>
+          <select data-icon="false">
+            <option value="1">The 1st Option</option>
+            <option value="2">The 2nd Option</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+          </select>
+        </div>
+        <h5 class="sucursales-p">¿Qué busca?</h5>
+        <ul class="list-checks">
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Cajero</span>
+            </label>
+          </li>
+           <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Centro de Recaudo</span>
+            </label>
+           </li>
+         <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">PAB</span>
+            </label>
+          </li>
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Oficina</span>
+            </label>
+          </li> 
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Multifuncional</span>
+            </label>
+          </li>
+        </ul>
+        <h5 class="sucursales-p">Entidad Bancaria</h5>
+        <ul class="list-checks">
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Banco CorpBanca</span>
+            </label>
+          </li>
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Helm</span>
+            </label>
+          </li>
+        </ul>
+        <a href="#connect-error" data-rel="popup" data-position-to="window">
+         <button class="button black button-large">Buscar</button>
+        </a>
+    </div>
+  </div>
+  <!-- POP UP SUCURSALES -->
+  <div data-role="popup" id="atm" data-overlay-theme="b" data-theme="b">
+    <div role="main">
+      <div class="atm-title">
+        Cajero
+        <button class="close-modal" data-navigate="contact" data-rel="back">X</button>
+      </div>
+      <div class="image-atm">
+        <img src="css/images/popup.jpg">
+      </div>
+      <div class="atm-office">
+        <h5>HELM CHICO</h5>
+        <h6>Cra 15 # 93B - 71</h6>
+      </div>
+      <div class="atm-content">
+        <ul>
+          <li class="atm-content-tel">
+            <h5>Teléfono</h5>
+            <a href="tel:0356931818" class="ui-link">
+              <span>693 1818</span>
+            </a>
+          </li>
+          <li class="atm-content-center">
+            <h5>Horarios de atención</h5>
+            <h6>24 Horas</h6>
+          </li>
+          <li class="atm-content-services">
+            <h5>Servicios especiales:</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+</div>
+<!--  -->
+<!-- SUCURSALES RESULTADOS DE BUSQUEDA -->
+<div data-role="page" class="advances" id="sucursales-busqueda">
+  <div role="main" class="ui-content">
+    <div class="content" style="max-width: 640px ! important;">
+      <div class="info bb"></div>
+      <div class="toggle-contact">
+        <span data-contact-view="oficinas-cercanas" class="selected">
+          <img src="css/images/oficina-cercana.png" class="oficina-cercana">
+          Oficina Cercana
+        </span>
+        <span data-contact-view="buscar-oficina">
+          <img src="css/images/sucursales.png" width="15" class="sucursales-img">
+          Buscar Oficina
+        </span>
+      </div>
+    </div>
+    <div data-contact-ref="buscar-oficina">
+      <ul data-role="listview" data-inset="true" class="list-atm">
+        <li>
+          <a href="#NOGO">
+            <h2>CAJERO HELM</h2>
+            <p><strong>CLINICA PALERMO</strong></p>
+            <p>Cll 45 # 22 -63</p>
+          </a>
+        </li>
+        <li>
+          <a href="#NOGO">
+            <h2>CAJERO HELM</h2>
+            <p><strong>CLINICA PALERMO</strong></p>
+            <p>Cll 45 # 22 -63</p>
+          </a>
+        </li>
+        <li>
+          <a href="#NOGO">
+            <h2>CAJERO HELM</h2>
+            <p><strong>CLINICA PALERMO</strong></p>
+            <p>Cll 45 # 22 -63</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- CONTACT -->
+<div data-role="page" class="advances" id="contact">
+  <div role="main" class="ui-content">
+    <div class="content" style="max-width: 640px ! important;">
+      <div class="info bb">
+       <!-- Non-login header trigger, delete on production -->
+       <!-- <span class="pull-right switch-contact-header">SWITCH</span> -->
+       <!-- -->
+       <div class="message"></div>
+       <p>Ponte en</p>
+       <p>contacto con nosotros</p>
+     </div>
+     <div class="toggle-contact">
+       <span data-contact-view="form" class="selected">Escríbenos</span>
+       <span data-contact-view="phone">Banca telefónica</span>
+     </div>
+     <!-- Added class 'contact-form' -->
+     <div data-contact-ref="form" class="form contact-form">
+       <label class="newlabel">Nombre:</label>
+       <input type="text" name="name" placeholder="Nombre" />
+       <label class="newlabel">Correo electrónico:</label>
+       <input type="text" name="email" placeholder="Correo electrónico" />
+       <label class="newlabel">Motivo del mensaje:</label>
+       <select data-icon="false">
+         <option value="" disabled selected >Seleccione un motivo</option>
+         <option value="1">Option 1</option>
+         <option value="2">Option 2</option>
+         <option value="3">Option 3</option>
+       </select>
+       <label class="newlabel">Mensaje:</label>
+       <textarea name="message" placeholder="Mensaje"></textarea>
+       <a href="#connect-error" data-rel="popup" data-position-to="window">
+         <button class="button black button-large">Enviar</button>
+       </a>
+<!--       <a href="#message-sent" data-rel="popup" data-position-to="window">
+         <button class="button black">Mensaje enviado ejemplo</button>
+       </a>
+-->     </div>
+     <div data-contact-ref="phone" class="phone">
+       <span class="phone-info">
+         Puedes llamar desde tu celular a nuestra Banca telefónica,
+         presionando el número al cual te quieres comunicar:
+       </span>
+       <ul>
+         <li>
+          <span>Bogotá</span>
+          <a href="tel:0315818181">
+            <span>581 8181</span>
+          </a>
+        </li>
+        <li>
+          <span>Cartagena</span>
+          <a href="tel:0356931818">
+            <span>693 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Medellín</span>
+          <a href="tel:0346041818">
+            <span>604 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Bucaramanga</span>
+          <a href="tel:0376971818">
+            <span>697 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Cali</span>
+          <a href="tel:0324861818">
+            <span>486 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Pereira</span>
+          <a href="tel:0363401818">
+            <span>340 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Barranquilla</span>
+          <a href="tel:0353851818">
+            <span>385 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Manizales</span>
+          <a href="tel:0368871818">
+            <span>887 1818</span>
+          </a>
+        </li>
+        <li>
+          <span>Armenia</span>
+          <a href="tel:0367451700">
+            <span>745 1700</span>
+          </a>
+        </li>
+        <li>
+          <span>Otras ciudades</span>
+          <a href="tel:018000512633">
+            <span>01 8000 512 633</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT POPUP -->
+<div data-role="popup" id="connect-error"
+data-overlay-theme="b" data-theme="b">
+<div role="main">
+ <span class="popup-title">Estimado cliente</span>
+ <p>
+   <b>Inconvenientes temporales en conexión</b>
+   <br>
+   <br>
+ </p>
+ <p class="intro-txt">
+   No es posible completar la transacción, por favor
+   verifica en internet <br><b>www.grupohelm.com</b> <br>o comunícate 
+   con nuestro número único por ciudad:
+ </p>
+   <div data-contact-ref="phone" class="phone phone1"  style="display:block !important;" id="phone-modal">
+     <ul class="contact-line">
+       <li>
+        <span>Bogotá</span>
+        <a href="tel:0315818181">
+          <span>581 8181</span>
+        </a>
+      </li>
+      <li>
+        <span>Cartagena</span>
+        <a href="tel:0356931818">
+          <span>693 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Medellín</span>
+        <a href="tel:0346041818">
+          <span>604 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Bucaramanga</span>
+        <a href="tel:0376971818">
+          <span>697 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Cali</span>
+        <a href="tel:0324861818">
+          <span>486 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Pereira</span>
+        <a href="tel:0363401818">
+          <span>340 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Barranquilla</span>
+        <a href="tel:0353851818">
+          <span>385 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Manizales</span>
+        <a href="tel:0368871818">
+          <span>887 1818</span>
+        </a>
+      </li>
+      <li>
+        <span>Armenia</span>
+        <a href="tel:0367451700">
+          <span>745 1700</span>
+        </a>
+      </li>
+      <li>
+        <span>Otras ciudades</span>
+        <a href="tel:018000512633">
+          <span>01 8000 512 633</span>
+        </a>
+      </li>
+    </ul>
+  </div><br>
+  <button data-navigate="contact" class="button" data-rel="back" style="margin: 0 auto;">Aceptar</button>
+  <p align="center">
+   <br> &lt;error code&gt;
+ </p>
+</div>
+</div>
+<!--  -->
+
+<!-- MESSAGE SENT POPUP -->
+<div data-role="popup" id="message-sent"
+data-overlay-theme="b" data-theme="b">
+<div role="main">
+ <span class="popup-title">Confirmación de envío</span>
+ <p>
+   El mensaje se ha enviado con éxito
+   <br><br>
+   Pronto estaremos comunicándonos
+   para resolver tu inquietud.</p>
+   <p><br>
+   </p>
+   <button data-navigate="contact" class="button black" data-rel="back" style="margin: 0 auto;">Aceptar</button>
+ </div>
+</div>
+<!--  -->
+</div>
+<!--  -->
+
+<!-- OFICINA CERCANA -->
+<div data-role="page" class="advances with-amount" id="oficina-cercana">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info">
+        <div class="location-light"></div>
+        <p>Nuestras</p>
+        <p>Oficinas</p>
+      </div>
+      <div class="toggle-contact">
+       <span data-contact-view="cercana" class="selected">Oficina cercana</span>
+       <span data-contact-view="buscar">Buscar oficina</span>
+     </div>
+     <div data-contact-ref="cercana">
+       <img src="css/images/map.png" alt="" />
+     </div>
+     <div data-contact-ref="buscar">
+       <span class="result">Resultado de la búsqueda:</span>
+       <ul class="oficinas" data-navigate="buscar-oficina">
+         <li>
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p>
+        </li>
+        <li>
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p>
+        </li>
+        <li>
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p>
+        </li>
+        <li>
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- OFICINA CERCANA -->
+<div data-role="page" class="advances with-amount" id="buscar-oficina">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info">
+        <div class="location-light"></div>
+        <p>Nuestras</p>
+        <p>Oficinas</p>
+      </div>
+      <div class="toggle-contact">
+       <span data-contact-view="cercana" class="selected">Oficina cercana</span>
+       <span data-contact-view="buscar">Buscar oficina</span>
+     </div>
+     <div data-contact-ref="cercana">
+       <img src="css/images/map.png" alt="" />
+     </div>
+     <div data-contact-ref="buscar" style="display:none">
+       <div class="form-buscar">
+         <span class="result">Busca los cajeros y oficinas Helm Bank y Corpbanca más cercanos</span>
+         <div class="form">
+          <select data-icon="false">
+            <option selected="selected" disabled="disabled">Ciudad</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <select data-icon="false">
+            <option selected="selected" disabled="disabled">Zona</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+          <span class="result">¿Que busca?</span>
+
+          <div class="checkboxes">
+            <div>
+              <input type="checkbox"/>
+              <span>Cajero</span>
+            </div>
+            <div>
+              <input type="checkbox"/>
+              <span>Centro de recaudo</span>
+            </div>
+            <div>
+              <input type="checkbox"/>
+              <span>PAB</span>
+            </div>
+            <div>
+              <input type="checkbox"/>
+              <span>Oficina</span>
+            </div>
+            <div>
+              <input type="checkbox"/>
+              <span>Multifuncional</span>
+            </div>
+          </div>
+
+          <span class="result">Entidad bancaria</span>
+
+          <div class="checkboxes">
+            <div>
+              <input type="checkbox"/>
+              <span>Helm</span>
+            </div>
+            <div>
+              <input type="checkbox"/>
+              <span>Corpbanca</span>
+            </div>
+          </div>
+          <a data-rel="popup" data-position-to="window">
+            <button class="button black trigger-office-search">Buscar</button>
+          </a>
+        </div>
+      </div>
+      <div class="resultado-busqueda" style="display:none;">
+       <span class="result">Resultado de la búsqueda:</span>
+       <ul class="oficinas" data-navigate="buscar-oficina">
+        <li><a href="#detalle-oficina">
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p></a>
+        </li>
+        <li><a href="#detalle-oficina">
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p></a>
+        </li>
+        <li><a href="#detalle-oficina">
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p></a>
+        </li>
+        <li><a href="#detalle-oficina">
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--  -->
+
+<!-- DETALLE OFICINA -->
+<div data-role="page" class="advances with-amount" id="detalle-oficina">
+  <div role="main" class="ui-content">
+    <div class="content">
+     <div class="logo-oficina">
+       <img src="css/images/logo-corpbanca.png" alt="" />
+     </div>
+     <div class="head">
+       Oficina Centro Comercial Unicentro
+       <span>Carrera 15 # 125-200</span>
+     </div>
+     <div class="data">
+       <ul>
+         <li class="phone">
+          <b>Teléfono</b>
+          <i></i> 581 8181
+        </li>
+        <li class="clock">
+          <b>Horarios de atención</b>
+          Lunes a viernes 9am - 5pm
+          <br>
+          Sábados 9am -2pm
+        </li>
+        <li class="special">
+          <b>Servicios especiales</b>
+          Recaudo de impuestos
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- PAYMENTS -->
+<div data-role="page" class="advances" id="payments">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="money"></div>
+       <p>Pagos</p>
+       <p>Servicios públicos y convenios</p>
+     </div>
+     <p style="padding: 0 15px;font-size: 14px;">
+       Selecciona la factura a pagar, recuerda
+       que la factura debe inscribirse
+       previamente a través del portal web.
+     </p>
+     <span>
+       <b>Facturas registradas</b>
+       <b class="pull-right">Referencia</b>
+     </span>
+     <ul>
+       <li data-navigate="payments-2">
+         <span>Acueducto Bogota</span>
+         <span class="pull-right">EEAB</span>
+       </li>
+       <li data-navigate="payments-2">
+         <span>Acueducto Bogota</span>
+         <span class="pull-right">EEAB</span>
+       </li>
+       <li data-navigate="payments-2">
+         <span>Acueducto Bogota</span>
+         <span class="pull-right">EEAB</span>
+       </li>
+       <li data-navigate="payments-2">
+         <span>Acueducto Bogota</span>
+         <span class="pull-right">EEAB</span>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- PAYMENTS 2 -->
+<div data-role="page" class="advances" id="payments-2">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="money"></div>
+       <p>Pagos</p>
+       <p>Servicios públicos y convenios</p>
+     </div>
+     <ul class="ticket-list">
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+     </ul>
+     <div class="btn-group half">
+       <button data-navigate="payments-voucher" class="button">Pagar</button>
+       <button class="button black">Cancelar</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- PAYMENTS VOUCHER  -->
+<div data-role="page" class="advances" id="payments-voucher">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb"> 
+       <div class="money"></div>
+       <p>Comprobante de pago</p>
+       <p>Servicios públicos y convenios</p>
+     </div>
+     <ul class="ticket-list">
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+     </ul>
+     <button data-navigate="payments" class="button black">Regresar a pagos</button>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- PAYMENTS 3  -->
+<div data-role="page" class="advances" id="payments-3">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="money"></div>
+       <p>Pagos</p>
+       <p>Servicios públicos y convenios</p>
+     </div>
+     <ul class="ticket-list">
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+     </ul>
+     <span>Factura número</span>
+     <div class="form" style="padding: 10px 15px 0;">
+       <input style="padding: 0 10px;" type="text" placeholder="123456789" />
+     </div>
+     <button class="button black">Consultar</button>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- PAYMENTS 4  -->
+<div data-role="page" class="advances" id="payments-4">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="money"></div>
+       <p>Pagos</p>
+       <p>Servicios públicos y convenios</p>
+     </div>
+     <ul class="ticket-list odd">
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+       <li>
+         <span>Empresa</span>
+         <span>EEAB</span>
+       </li>
+     </ul>
+     <span>Cuenta origen</span>
+     <ul>
+       <li>Cuenta de ahorros ***0021</li>
+       <li>Cuenta de ahorros ***0021</li>
+       <li>Cuenta de ahorros ***0021</li>
+       <li>Cuenta de ahorros ***0021</li>
+     </ul>
+     <div class="btn-group half">
+       <button class="button">Pagar</button>
+       <button class="button black">Cancelar</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- GIROS -->
+<div data-role="page" class="advances" id="giros">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="world"></div>
+       <p>Giros</p>
+       <p>Recibir giros</p>
+     </div>
+     <p class="soft">Tienes <b>2</b> giros pendientes por recibir</p>
+     <ul class="ticket-list odd giros">
+       <li class="arrow"></li>
+       <li>
+         <span class="bold">Giro 1</span>
+       </li>
+       <li>
+         <span>Referencia</span>
+         <span>Gastos personales</span>
+       </li>
+       <li>
+         <span>Moneda</span>
+         <span>£ Libras</span>
+       </li>
+       <li>
+         <span>Monto</span>
+         <span>£ 1.200</span>
+       </li>
+       <li>
+         <span>Girador</span>
+         <span>Lina González</span>
+       </li>
+       <li>
+         <span>Fecha</span>
+         <span>25-04-2015</span>
+       </li>
+     </ul>
+     <ul class="ticket-list no-odd giros">
+       <li class="arrow"></li>
+       <li>
+         <span class="bold">Giro 2</span>
+       </li>
+       <li>
+         <span>Referencia</span>
+         <span>Gastos personales</span>
+       </li>
+       <li>
+         <span>Moneda</span>
+         <span>£ Libras</span>
+       </li>
+       <li>
+         <span>Monto</span>
+         <span>£ 1.200</span>
+       </li>
+       <li>
+         <span>Girador</span>
+         <span>Lina González</span>
+       </li>
+       <li>
+         <span>Fecha</span>
+         <span>25-04-2015</span>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- GIROS 2-->
+<div data-role="page" class="advances" id="giros-2">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="world"></div>
+       <p>Giros</p>
+       <p>Recibir giro 1 - Detalles</p>
+     </div>
+     <ul class="ticket-list">
+       <li>
+         <span>Moneda</span>
+         <span>£ Libras</span>
+       </li>
+       <li>
+         <span>Monto de giro</span>
+         <span>£ 1.200</span>
+       </li>
+       <li>
+         <span>Fecha de la transferencia</span>
+         <span>25-04-2015</span>
+       </li>
+       <li>
+         <span>Nombre del girador</span>
+         <span>Lina González</span>
+       </li>
+       <li>
+         <span>Banco</span>
+         <span>Citibank</span>
+       </li>
+       <li>
+         <span>Referencia</span>
+         <span>Gastos personales</span>
+       </li>
+     </ul>
+     <span>Escoge destino del giro</span>
+     <ul class="source toggle-founds">
+      <li>Cuenta de ahorros ****0791</li>
+      <li>Cuenta corriente ****2452</li>
+    </ul>
+    <span>Concepto del giro</span>
+    <form>
+      <div class="ui-field-contain">
+        <select name="select-native-3" id="select-native-3" data-iconpos="left">
+          <option selected="selected" disable="disable">Concepto del giro</option>
+          <option value="2">The 2nd Option</option>
+          <option value="3">The 3rd Option</option>
+          <option value="4">The 4th Option</option>
+        </select>
+      </div>
+    </form>
+    <span>Comentarios</span>
+    <input type="text" placeholder="Comentario XXXXXX"/>
+    <div class="btn-group half">
+      <button data-navigate="payments-voucher" class="button">Continuar</button>
+      <button class="button black">Cancelar</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- GIROS 3-->
+<div data-role="page" class="advances" id="giros-3">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="world"></div>
+       <p>Giros</p>
+       <p>Recibir giro 1 - Comprobante</p>
+     </div>
+     <ul class="ticket-list">
+       <li>
+         <span>Moneda</span>
+         <span>£ Libras</span>
+       </li>
+       <li>
+         <span>Tasa de cambio GBP/COP</span>
+         <span>$ 2.890,00</span>
+       </li>
+       <li>
+         <span>Valor en pesos</span>
+         <span>$ 2.956.978,00</span>
+       </li>
+       <li>
+         <span>Valor de la comisión</span>
+         <span>$ 45.000,00</span>
+       </li>
+       <li>
+         <span>Valor de retención</span>
+         <span>$ 56.893,00</span>
+       </li>
+       <li>
+         <span>Cuenta destino de los fondos</span>
+         <span>CTA CTE ****2452</span>
+       </li>
+       <li>
+         <span>Concepto del giro</span>
+         <span>1601 - Otros conceptos</span>
+       </li>
+       <li>
+         <span>Fecha</span>
+         <span>10/05/2015 8:30 AM</span>
+       </li>
+       <li>
+         <span>IP</span>
+         <span>192.168.10.20</span>
+       </li>
+       <li>
+         <span>No. Confirmación (Ref)</span>
+         <span>125648</span>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- GIROS 4-->
+<div data-role="page" class="advances" id="giros-4">
+  <div role="main" class="ui-content">
+   <div class="content">
+     <div class="info bb">
+       <div class="world"></div>
+       <p>Giros</p>
+       <p>Recibir giro 1 - Resumen</p>
+     </div>
+     <ul class="ticket-list">
+       <li>
+         <span>Moneda</span>
+         <span>£ Libras</span>
+       </li>
+       <li>
+         <span>Tasa de cambio GBP/COP</span>
+         <span>$ 2.890,00</span>
+       </li>
+       <li>
+         <span>Valor en pesos</span>
+         <span>$ 2.956.978,00</span>
+       </li>
+       <li>
+         <span>Valor de la comisión</span>
+         <span>$ 45.000,00</span>
+       </li>
+       <li>
+         <span>Valor de retención</span>
+         <span>$ 56.893,00</span>
+       </li>
+       <li>
+         <span>Cuenta destino de los fondos</span>
+         <span>CTA CTE ****2452</span>
+       </li>
+       <li>
+         <span>Concepto del giro</span>
+         <span>1601 - Otros conceptos</span>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<!--  -->
+
+<!-- OPENING -->
+<div data-role="page" class="advances with-amount" id="opening">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info bb">
+        <div class="money"></div>
+        <p>Apertura</p>
+        <p>CDT</p>
+      </div>
+      <span>Tipo de inversión</span>
+      <ul class="source toggle-founds">
+        <li>CDT Virtual</li>
+        <li>CDT tipo YYYYYY</li>
+      </ul>
+      <span class="amount">Monto a invertir</span>
+      <div class="input-helper">
+        <input type="number" placeholder="$" />
+      </div>
+      <b class="days">Plazo en días</b><input type="number" /> 
+      <div class="btn-group half">
+        <button data-navigate="payments-voucher" class="button">Continuar</button>
+        <button class="button black">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- OPENING 2 -->
+<div data-role="page" class="advances with-amount" id="opening-2">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info bb">
+        <div class="money"></div>
+        <p>Apertura</p>
+        <p>CDT</p>
+      </div>
+      <ul class="ticket-list">
+        <li>
+          <span>Monto a invertir</span>
+          <span>$500.000.00</span>
+        </li>
+        <li>
+          <span>Tasa efectiva anual</span>
+          <span>5.5%</span>
+        </li>
+      </ul>
+      <span>Escoge origen de los fondos</span>
+      <ul class="source toggle-founds">
+       <li>Cuenta de ahorros ****0791</li>
+       <li>Cuenta corriente ****2452</li>
+     </ul>
+     <span>Frecuencia de pago de intereses</span>
+     <ul class="source toggle-founds">
+      <li>90 días</li>
+      <li>120 días</li>
+      <li>180 días</li>
+      <li>360 días</li>
+    </ul>
+    <span>Forma de pago de los intereses</span>
+    <ul class="source toggle-founds">
+      <li>Abonar a tu cuenta</li>
+      <li>Cheque de gerencia</li>
+    </ul>
+    <span>Al vencimiento de tu inversión el capital se debe:</span>
+    <ul class="source toggle-founds">
+      <li>Abonar a tu cuenta</li>
+      <li>Pagar en cheque de gerencia</li>
+      <li>Renovar</li>
+    </ul>
+    <div class="btn-group half">
+      <button data-navigate="payments-voucher" class="button">Continuar</button>
+      <button class="button black">Cancelar</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+
+<!-- OPENING 3 -->
+<div data-role="page" class="advances with-amount" id="opening-3">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info bb">
+        <div class="money"></div>
+        <p>Apertura</p>
+        <p>CDT</p>
+      </div>
+      <ul class="ticket-list">
+        <li>
+          <span>Fecha</span>
+          <span>15/01/2015 10:45:00 AM</span>
+        </li>
+        <li>
+          <span>Cuenta de origen</span>
+          <span>Cuenta de ahorros ****0021</span>
+        </li>
+        <li>
+          <span>Monto</span>
+          <span>$500.000.00</span>
+        </li>
+        <li>
+          <span>Fecha de vencimiento</span>
+          <span>05/02/2016</span>
+        </li>
+        <li>
+          <span>Acción al vencimiento</span>
+          <span>Renovar</span>
+        </li>
+        <li>
+          <span>Tasa efectiva</span>
+          <span>5.5% E.A.</span>
+        </li>
+        <li>
+          <span>Periodicidad de pago de intereses</span>
+          <span>90 días fijo</span>
+        </li>
+        <li>
+          <span>Método de pago intereses</span>
+          <span>Renovar</span>
+        </li>
+        <li>
+          <span>Moneda</span>
+          <span>COP</span>
+        </li>
+      </ul>
+      <div class="btn-group half">
+        <button data-navigate="payments-voucher" class="button">Crear</button>
+        <button class="button black">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- OPENING 4 -->
+<div data-role="page" class="advances with-amount" id="opening-4">
+  <div role="main" class="ui-content">
+    <div class="content">
+      <div class="info bb">
+        <div class="money"></div>
+        <p>Apertura</p>
+        <p>CDT Comprobante</p>
+      </div>
+      <ul class="ticket-list">
+        <li>
+          <span>Fecha</span>
+          <span>15/01/2015 10:45:00 AM</span>
+        </li>
+        <li>
+          <span>Cuenta de origen</span>
+          <span>Cuenta de ahorros ****0021</span>
+        </li>
+        <li>
+          <span>Monto</span>
+          <span>$500.000.00</span>
+        </li>
+        <li>
+          <span>Fecha de vencimiento</span>
+          <span>05/02/2016</span>
+        </li>
+        <li>
+          <span>Acción al vencimiento</span>
+          <span>Renovar</span>
+        </li>
+        <li>
+          <span>Tasa nominal</span>
+          <span>3.65% E.A.</span>
+        </li>
+        <li>
+          <span>Tasa efectiva</span>
+          <span>3.7% E.A.</span>
+        </li>
+        <li>
+          <span>Periodicidad de pago de intereses</span>
+          <span>90 días fijo</span>
+        </li>
+        <li>
+          <span>Método de pago intereses</span>
+          <span>Renovar</span>
+        </li>
+        <li>
+          <span>Moneda</span>
+          <span>COP</span>
+        </li>
+        <li>
+          <span>Costo de la trx.</span>
+          <span>90 días fijo</span>
+        </li>
+        <li>
+          <span>Dirección IP</span>
+          <span>181.289.198.192</span>
+        </li>
+        <li>
+          <span>Número de confirmación (REF)</span>
+          <span>9620114291</span>
+        </li>
+      </ul>
+      <button data-navigate="payments" class="button black">Resumen de productos</button>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!-- FOOTER -->
+<div data-role="footer">
+  <ul>
+    <li>
+      <a href="#contact">
+        <span class="icon-message"></span>
+        <p>Contáctenos</p>
+      </a>
+   </li>
+   <li>
+    <a href="#sucursales">
+      <span class="icon-location"></span>
+      <p>Sucursales</p>
+    </a>
+  </li>
+  <li>
+    <span class="icon-help"></span>
+    <p>Ayuda</p>
+  </li>
+</ul>
+<div class="copy">
+  Todos los derechos reservados, Banco Corpbanca Colombia S.A.
+</div>
+</div>
+<!--  -->
+
+<!-- MAIN MENU -->
+<div data-role="panel" id="main-menu" data-display="overlay">
+  <div class="logo"></div>
+  <p>Claudia Sofía</p>
+      <!--collapsible
+      <!-- /collapsible -->
+      <ul data-role="listview" data-content-theme="false" class="listItemNoIcon">
+        <li class="products list-cleared"><a href="#products"><span></span>Resumen de productos</a></li>
+        <li class="advances list-cleared"><a href="#advances"><span></span>Avance de Tarjeta de Crédito</a></li>
+        <li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" class="transferences list-cleared">
+          <h3><span></span>Transferencias</h3>
+          <ul>
+            <li><a href="#transferences-01" data-rel="close">A cuentas propias</a></li>
+            <li><a href="#" data-rel="close">A cuentas inscritas</a></li>
+          </ul>
+        </li>
+        <li data-role="collapsible" data-inset="false" data-icon="false" class="payments list-cleared">
+          <h3><span></span>Pagos</h3>
+          <ul>
+            <li><a href="#" data-rel="close">Servicios públicos y convenios</a></li>
+            <li><a href="#" data-rel="close">Tarjeta de crédito</a></li>
+            <li><a href="#" data-rel="close">Préstamos</a></li>
+            <li><a href="#" data-rel="close">Credicash</a></li>
+          </ul>
+        </li>
+        <li data-role="collapsible" data-inset="false" data-icon="false" class="payments list-cleared">
+          <h3><span></span>Pagos</h3>
+          <ul>
+            <li><a href="#" data-rel="close">Servicios públicos y convenios</a></li>
+            <li><a href="#" data-rel="close">Tarjeta de crédito</a></li>
+            <li><a href="#" data-rel="close">Préstamos</a></li>
+            <li><a href="#" data-rel="close">Credicash</a></li>
+          </ul>
+        </li>
+        <li data-role="collapsible" data-inset="false" data-icon="false" class="payments list-cleared">
+          <h3><span></span>Pagos</h3>
+          <ul>
+            <li><a href="#" data-rel="close">Servicios públicos y convenios</a></li>
+            <li><a href="#" data-rel="close">Tarjeta de crédito</a></li>
+            <li><a href="#" data-rel="close">Préstamos</a></li>
+            <li><a href="#" data-rel="close">Credicash</a></li>
+          </ul>
+        </li>
+        <li data-role="collapsible" data-inset="false" data-icon="false" class="payments list-cleared">
+          <h3><span></span>Pagos</h3>
+          <ul>
+            <li><a href="#" data-rel="close">Servicios públicos y convenios</a></li>
+            <li><a href="#" data-rel="close">Tarjeta de crédito</a></li>
+            <li><a href="#" data-rel="close">Préstamos</a></li>
+            <li><a href="#" data-rel="close">Credicash</a></li>
+          </ul>
+        </li>
+        <li data-role="collapsible" data-inset="false" data-icon="false" class="wires list-cleared">
+          <h3><span></span>Giros internacionales</h3>
+          <ul>
+            <li><a href="#" data-rel="close">Enviar giro</a></li>
+            <li><a href="#" data-rel="close">Recibir giro</a></li>
+          </ul>
+        </li>
+        <li class="aperture list-cleared"><a href="#aperture" data-rel="close"><span></span>Apertura de CDT</a></li>
+      </ul>
+      <a href="#login" data-rel="close" class="safe-exit"><button class="button">Salida Segura</button></a>
+    </div>
+    <!--  -->
+    <script src="jquery-mobile/jquery.js"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/handler.js"></script>
+    <script src="js/swiper.min.js"></script>
+  </body>
+  </html>
