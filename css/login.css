@@ -2,8 +2,7 @@
   background-image:url(images/login-bg.jpg);
   background-repeat:no-repeat;
   background-position:center;
-  background-position:center;
-  background-size: 100%;
+  /*background-size: 100%;*/
   background-attachment:fixed; 
   height: 100%; /*Adding hegiht 100%*/
 }

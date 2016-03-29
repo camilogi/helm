@@ -97,33 +97,23 @@ onPageChange = function (){
       $('.banner').show();
       //showSplash();
     } else if (hash === '#login') {
-      $('.swiper-container').show();
-      $('.banner').show();
       $('.icon-menu, .info-bar, .indicators, .back-to').hide();
+      $('.banner').show();
       //showSplash();
     } else if (hash === '#detalle-oficina') {
       $('[data-role="header"]').hide();
       $('[role="main"]').addClass('detail');
     } else if (hash === '#image-verification' || hash === '#questions') {
       $('.info-bar, .swiper-container, .indicators').hide();
-      $('.back-to').show();
     } else if(hash === '#contact'){
       $('.icon-menu, .info-bar, .indicators, .swiper-container, .span-header').hide();
-      $('.back-to').show();
     } else if(hash === '#sucursales'){
       $('.icon-menu, .info-bar, .swiper-container').hide();
-      $('.back-to').show();
     } else if(hash === '#sucursales-busqueda'){
       $('.icon-menu, .info-bar, .indicators, .swiper-container').hide();
-      $('.back-to').show();
-    } else if(hash === '#sucursales-lista'){
-      $('.icon-menu, .info-bar, .indicators, .swiper-container').hide();
-      $('.back-to').show();
-    } else if(hash === '#questions'){
-      $('.back-to').show();
     } else {
       $('.icon-menu, .info-bar').show();
-      $('.banner, .back-to, .span-header').hide();
+      $('.banner').hide();
       $('[role="main"]').removeClass('detail');
       $('[data-role="header"]').show();
     }
@@ -219,7 +209,7 @@ $(document).ready(function(){
       // Change background color
       thisElement.siblings('li').css('background-color', '#FFF');
       thisElement.css('background-color', '#f37c20');
-      //$('.weird-flap div').css('background', '#f37c20');
+      $('.weird-flap div').css('background', '#f37c20');
 
       thisElement.siblings('li').find('p').css('color', '#59595a');
       thisElement.find('p').css('color', '#FFF');

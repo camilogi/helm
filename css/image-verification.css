@@ -1,6 +1,6 @@
 /*Changed from 89px to 239px*/
 #image-verification .ui-content {
-  padding-top: 239px !important;
+  padding-top: 89px;
 }
 #image-verification .content {
   max-width: 300px;
@@ -105,19 +105,20 @@
   border: 1px solid #cc3511;
   box-shadow: 0px 0px 10px 1px #cc3511;
 }
-#image-verification .error-message {
+.header .error-message {
   background: #cc3511;
   color: #FFF;
   font-size: 14px;
-  position: absolute;
+  position: fixed;
   /*bottom: 70px;*/
-  top: 90px;
+  top: 0px;
   width: 100%;
   padding: 5px 0 !important;
   text-align: center;
   display: none;
+  z-index: 10;
 }
-#image-verification .error-message div {
+.header .error-message div {
   background: url(images/icon-error-white.png) no-repeat 10px center;
   background-size: auto 100%;
   width: 300px;
@@ -126,4 +127,7 @@
 #image-verification label{
   background: transparent;
   border: none;
+}
+#image-verification .less-padding{
+  padding-top: 100px;
 }

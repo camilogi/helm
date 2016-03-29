@@ -1,5 +1,5 @@
 #sucursales .ui-content,
-#sucursales-busqueda .ui-content{padding-top: 71px !important;}
+#sucursales-busqueda .ui-content{padding-top: 46px !important; z-index:9000 !important;}
 #sucursales .info.bb,
 #sucursales-busqueda .info.bb{border-bottom: none;}
 #sucursales .toggle-contact,
@@ -14,7 +14,6 @@
   float: left;
   text-align: center;
   border-bottom: 1px solid #b7b9b8;
-  background: #FFF;
   cursor: pointer;
   color: #9d9d9d;
   line-height: 43px;
@@ -35,6 +34,27 @@
 #sucursales-busqueda .toggle-contact span.selected{
   height: 43px;
   padding: 0;
+  padding-left: 10px;
+}
+#sucursales .toggle-contact span.oficinas-cercanas{
+  background: url('images/oficina-cercana.png') #FFF no-repeat;
+  background-size: 16px;
+  background-position: 8%;
+}
+#sucursales .toggle-contact span.oficinas-cercanas.selected{
+  background: url('images/oficina-cercana-orange.png') #FFF no-repeat left center;
+  background-size: 16px;
+  background-position: 8%;
+}
+#sucursales .toggle-contact span.buscar-oficina{
+  background: url('images/sucursales.png') #FFF no-repeat left center;
+  background-size: 16px;
+  background-position: 8%;
+}
+#sucursales .toggle-contact span.buscar-oficina.selected{
+  background: url('images/sucursales-orange.png') #FFF no-repeat left center;
+  background-size: 16px;
+  background-position: 8%;
 }
 .oficina-cercana, .sucursales-img{
   width: 15px;
@@ -209,7 +229,10 @@ li.atm-content-center{
 #sucursales-busqueda li{background-color: #f2f2f2;}
 #sucursales-busqueda li h2{
   color: #525a5c;
+  margin: .25em 0;
+  font-size: 14px;
 }
+#sucursales-busqueda .list-atm{margin: 0;}
 #sucursales-busqueda .list-atm li a{
   padding-top: 0px;
   padding-bottom: 0px;
@@ -217,7 +240,25 @@ li.atm-content-center{
 }
 #sucursales-busqueda .list-atm li p{
   color: #787a91;
+  margin: .4em 0;
 }
 #sucursales-busqueda li:nth-child(2n+1){
   background-color: #FFF;
+}
+#sucursales .after-focus{
+  box-shadow: 0px 0px 5px 0px rgba(20, 177, 10, 0.5);
+  border: 1px #14b10a solid !important;
+}
+#sucursales .label-sucursales,
+#sucursales .select-sucursales{width: 100%}
+#sucursales .ui-field-contain .ui-select{width: 100%}
+#sucursales-busqueda h4{
+  margin: 0;
+  padding-left: 15px;
+  height: 20px;
+  line-height: 40px;
+}
+#sucursales .list-atm .ui-btn-icon-right::after{
+  left: inherit;
+  right: 10px;
 }
