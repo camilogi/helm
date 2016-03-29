@@ -65,9 +65,7 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-    <a href="#login">
-      <button class="back-to"><img src="css/images/back-to.png" width="15" />Inicio</button>
-    </a>
+    <button class="back-to"><img src="css/images/back-to.png" width="15" />Inicio</button>
    <a href="#main-menu">
     <span class="icon-menu bg-cover"></span>
   </a>
@@ -123,7 +121,6 @@
 
 <!-- IMAGE VERIFICATION -->
 <div data-role="page" id="image-verification">
-<button class="back-to"><img src="css/images/back-to.png" width="15" />Inicio</button>
   <div role="main" class="ui-content">
     <div class="content">
       <p>Perro de caza</p>
@@ -150,7 +147,6 @@
 
 <!-- QUESTIONS -->
 <div data-role="page" id="questions">
-  <button class="back-to"><img src="css/images/back-to.png" width="15" />Inicio</button>
   <div role="main" class="ui-content">
     <div class="content">
       Por favor, responde a la(s) siguiente(s)
@@ -697,7 +693,7 @@
         <span data-contact-view="oficinas-cercanas" class="oficinas-cercanas selected">
           Oficina Cercana
         </span>
-        <span data-contact-view="busqueda-sucursales" class="buscar-oficina">
+        <span data-contact-view="sucursales-busqueda" class="buscar-oficina">
           Buscar Oficina
         </span>
       </div>
@@ -706,83 +702,109 @@
          <img src="css/images/example-map.png">
         </a>
       </div>
-      <div data-contact-ref="busqueda-sucursales" style="display: none;">
-          <p class="sucursales-p intro-buscar-oficina">
-            Busca los cajeros y oficinas Helm Bank y Corpbanca más cercanos
-          </p>
-          <div class="ui-field-contain">
-            <label class="newlabel mb5 mt5 label-sucursales">Seleccione ciudad</label>
-            <select data-icon="false" class="select-sucursales">
-              <option value="1">The 1st Option</option>
-              <option value="2">The 2nd Option</option>
-              <option value="3">The 3rd Option</option>
-              <option value="4">The 4th Option</option>
-            </select>
-          </div>
-          <div class="ui-field-contain">
-            <label class="newlabel mb5 mt15 label-sucursales">Seleccione la zona</label>
-            <select data-icon="false" class="select-sucursales">
-              <option value="1">The 1st Option</option>
-              <option value="2">The 2nd Option</option>
-              <option value="3">The 3rd Option</option>
-              <option value="4">The 4th Option</option>
-            </select>
-          </div>
-          <h5 class="sucursales-p">¿Qué busca?</h5>
-          <ul class="list-checks">
-            <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">Cajero</span>
-              </label>
-            </li>
-             <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">Centro de Recaudo</span>
-              </label>
-             </li>
-           <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">PAB</span>
-              </label>
-            </li>
-            <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">Oficina</span>
-              </label>
-            </li> 
-            <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">Multifuncional</span>
-              </label>
-            </li>
-          </ul>
-          <h5 class="sucursales-p">Entidad Bancaria</h5>
-          <ul class="list-checks">
-            <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">Banco CorpBanca</span>
-              </label>
-            </li>
-            <li>
-              <label class="ui-checkbox">
-                <input type="checkbox" id="vf-image" />
-                <span class="confirm">Helm</span>
-              </label>
-            </li>
-          </ul>
-          <button class="button black button-large">Buscar</button>
-<!--          <a >
-            <button class="button black button-large">Buscar</button>
-          </a>
--->      </div>
     </div>
-  </div>
+    <div data-contact-ref="buscar-oficina">
+        <p class="sucursales-p intro-buscar-oficina">
+          Busca los cajeros y oficinas Helm Bank y Corpbanca más cercanos
+        </p>
+        <div class="ui-field-contain">
+          <label class="newlabel mb5 mt5 label-sucursales">Seleccione ciudad</label>
+          <select data-icon="false" class="select-sucursales">
+            <option value="1">The 1st Option</option>
+            <option value="2">The 2nd Option</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+          </select>
+        </div>
+        <div class="ui-field-contain">
+          <label class="newlabel mb5 mt15 label-sucursales">Seleccione la zona</label>
+          <select data-icon="false" class="select-sucursales">
+            <option value="1">The 1st Option</option>
+            <option value="2">The 2nd Option</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+          </select>
+        </div>
+        <h5 class="sucursales-p">¿Qué busca?</h5>
+        <ul class="list-checks">
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Cajero</span>
+            </label>
+          </li>
+           <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Centro de Recaudo</span>
+            </label>
+           </li>
+         <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">PAB</span>
+            </label>
+          </li>
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Oficina</span>
+            </label>
+          </li> 
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Multifuncional</span>
+            </label>
+          </li>
+        </ul>
+        <h5 class="sucursales-p">Entidad Bancaria</h5>
+        <ul class="list-checks">
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Banco CorpBanca</span>
+            </label>
+          </li>
+          <li>
+            <label class="ui-checkbox">
+              <input type="checkbox" id="vf-image" />
+              <span class="confirm">Helm</span>
+            </label>
+          </li>
+        </ul>
+        <a href="#connect-error" data-rel="popup" data-position-to="window">
+         <button class="button black button-large">Buscar</button>
+        </a>
+    </div>
+<!--    <div data-contact-ref="sucursales-busqueda" id="sucursales-busqueda">
+      <h4>Resultados de la busqueda</h4>
+      <ul data-role="listview" data-inset="true" class="list-atm">
+        <li>
+          <a href="#NOGO">
+            <h2>CAJERO HELM</h2>
+            <p><strong>CLINICA PALERMO</strong></p>
+            <p>Cll 45 # 22 -63</p>
+          </a>
+
+        </li>
+        <li>
+          <a href="#NOGO">
+            <h2>CAJERO HELM</h2>
+            <p><strong>CLINICA PALERMO</strong></p>
+            <p>Cll 45 # 22 -63</p>
+          </a>
+        </li>
+        <li>
+          <a href="#NOGO">
+            <h2>CAJERO HELM</h2>
+            <p><strong>CLINICA PALERMO</strong></p>
+            <p>Cll 45 # 22 -63</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+-->  </div>
   <!-- POP UP SUCURSALES -->
   <div data-role="popup" id="atm" data-overlay-theme="b" data-theme="b">
     <div role="main">
@@ -841,7 +863,6 @@
 
 <!-- CONTACT -->
 <div data-role="page" class="advances" id="contact">
-<!-- <button class="back-to"><img src="css/images/back-to.png" width="15" />Inicio</button> -->
   <div role="main" class="ui-content">
     <div class="content">
       <div class="info bb">
@@ -1055,23 +1076,29 @@ data-overlay-theme="b" data-theme="b">
 <!--  -->
 
 <!-- OFICINA CERCANA -->
-<div data-role="page" class="advances with-amount" id="sucursales-lista">
+<div data-role="page" class="advances with-amount" id="oficina-cercana">
   <div role="main" class="ui-content">
     <div class="content">
-      <!-- <div class="info">
+      <div class="info">
         <div class="location-light"></div>
         <p>Nuestras</p>
         <p>Oficinas</p>
-      </div> -->
+      </div>
+      <div class="toggle-contact">
+       <span data-contact-view="cercana" class="selected">Oficina cercana</span>
+       <span data-contact-view="buscar">Buscar oficina</span>
+     </div>
+     <div data-contact-ref="cercana">
+       <img src="css/images/map.png" alt="" />
+     </div>
+     <div data-contact-ref="buscar">
        <span class="result">Resultado de la búsqueda:</span>
        <ul class="oficinas" data-navigate="buscar-oficina">
-         <a href="#atm2" data-rel="popup" data-transition="pop" aria-haspopup="true" aria-owns="atm" aria-expanded="false" class="ui-link">
-           <li>
-            <b>Cajero - Helm</b>
-            <p>Centro comercial Unicentro</p>
-            <p>Carrera 15 # 125-020</p>
-          </li>
-         </a>
+         <li>
+          <b>Cajero - Helm</b>
+          <p>Centro comercial Unicentro</p>
+          <p>Carrera 15 # 125-020</p>
+        </li>
         <li>
           <b>Cajero - Helm</b>
           <p>Centro comercial Unicentro</p>
@@ -1088,46 +1115,14 @@ data-overlay-theme="b" data-theme="b">
           <p>Carrera 15 # 125-020</p>
         </li>
       </ul>
-    <div data-role="popup" id="atm2" data-overlay-theme="b" data-theme="b">
-      <div role="main">
-        <div class="atm-title">
-          Cajero
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-        </div>
-        <div class="image-atm">
-          <img src="css/images/popup.jpg">
-        </div>
-        <div class="atm-office">
-          <h5>HELM CHICO</h5>
-          <h6>Cra 15 # 93B - 71</h6>
-        </div>
-        <div class="atm-content">
-          <ul>
-            <li class="atm-content-tel">
-              <h5>Teléfono</h5>
-              <a href="tel:0356931818" class="ui-link">
-                <span>693 1818</span>
-              </a>
-            </li>
-            <li class="atm-content-center">
-              <h5>Horarios de atención</h5>
-              <h6>24 Horas</h6>
-            </li>
-            <li class="atm-content-services">
-              <h5>Servicios especiales:</h5>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
-  <!--  -->
-  </div>
+</div>
 </div>
 <!--  -->
 
 <!-- OFICINA CERCANA -->
-<!-- <div data-role="page" class="advances with-amount" id="buscar-oficina">
+<div data-role="page" class="advances with-amount" id="buscar-oficina">
   <div role="main" class="ui-content">
     <div class="content">
       <div class="info">
@@ -1228,7 +1223,7 @@ data-overlay-theme="b" data-theme="b">
   </div>
 </div>
 </div>
-</div> -->
+</div>
 <!--  -->
 
 <!-- DETALLE OFICINA -->

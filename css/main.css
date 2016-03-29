@@ -148,12 +148,13 @@ img {
   border-bottom: 1px solid #e7e7e7;
 }
 .back-to{
-  position: absolute;
-  color: #5a595e;
-  background-color: transparent;
-  border: none;
-  top: 26px;
-  left: 0;
+	position: absolute;
+	color: #5a595e;
+	background-color: transparent;
+	border: none;
+	top: 18px;
+	left: 0;
+	padding: 0 10px;
 }
 .back-to img{
   width: 15px;
@@ -267,11 +268,11 @@ img {
 
 /* Content ******************/
 .content {
-  max-width: 320px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .ui-content  {
-  padding-top: 132px !important;
+  padding-top: 132px;
   padding-bottom: 80px !important;
 }
 .ui-content.detail  {
@@ -386,6 +387,7 @@ img {
   bottom: 0;
   border-top: 1px solid #c5c5c5;
   padding-bottom: 16px;
+  z-index: 10;
 }
 [data-role="footer"] ul {
   padding: 0;
@@ -579,7 +581,7 @@ width:90% !important;
     font-weight: normal;
 }
 #sucursales .ui-select .ui-btn {
-    background: url(images/input-subject.png) no-repeat 292px center;
+    background: url(images/input-subject.png) no-repeat 96%;
 	background-size: 22.5px !important;
 }
 
@@ -1136,3 +1138,11 @@ width:90% !important;
 .per100 {
   width: 100% !important;
 }
+/*-------------- Top message one line ---------*/
+.p-one-line {
+  height: 30px !important;
+  vertical-align: middle !important;
+  padding-top: 10px;
+}
+/*-------------- Fixing inner signed pages ---------*/
+.mt130 {margin-top:130px;}

@@ -111,5 +111,7 @@
 	padding: 0.1em 0.1em !important;
 }
 .advances .ui-icon-carat-r:after,
-.products .ui-icon-carat-r:after{background: none;}
+.products .ui-icon-carat-r:after{background-color: none;}
+/*.advances a:after,
+.products a:after{display: none;}*/
 .ui-btn-icon-left{padding-left: 1em;}
